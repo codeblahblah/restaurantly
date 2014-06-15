@@ -6,7 +6,8 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: restautantly_dev
+  database: restaurantly_dev
+  username: drammopo
   pool: 5
   host: localhost
   port: 5432
@@ -17,7 +18,8 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: restautantly_test
+  database: restaurantly_test
+  username: drammopo
   pool: 5
   host: localhost
   port: 5432

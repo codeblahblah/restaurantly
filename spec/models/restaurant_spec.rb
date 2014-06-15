@@ -1,5 +1,6 @@
 require 'spec_helper'
 
 describe Restaurant do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject(:restaurant) { FactoryGirl.build(:restaurant, name: nil)}
+  it {expect(restaurant.valid?).to be_false}
 end
