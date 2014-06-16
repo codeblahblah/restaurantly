@@ -16,4 +16,12 @@ describe RestaurantsController do
       it { expect(subject).to redirect_to(:root) }
     end
   end
+
+  context "GET /restaurants/new" do
+    subject {get "/restaurants/new" }
+
+    it "renders new" do
+      expect(subject).to render_template(:new)
+    end
+  end
 end
